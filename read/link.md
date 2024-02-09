@@ -8,7 +8,7 @@ has_children: false
 # 連結
 
 
-## Mate Desktop
+## MATE Desktop
 
 | Link |
 | ---- |

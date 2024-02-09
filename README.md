@@ -4,8 +4,8 @@
 
 | Link | GitHub |
 | ---- | ------ |
-| [Mate Desktop Adjustment](https://samwhelp.github.io/mate-adjustment/) | [GitHub](https://github.com/samwhelp/mate-adjustment) |
-| [Mate Desktop 探索筆記](https://samwhelp.github.io/note-about-mate/) | [GitHub](https://github.com/samwhelp/note-about-mate) |
+| [MATE Desktop Adjustment](https://samwhelp.github.io/mate-adjustment/) | [GitHub](https://github.com/samwhelp/mate-adjustment) |
+| [MATE Desktop 探索筆記](https://samwhelp.github.io/note-about-mate/) | [GitHub](https://github.com/samwhelp/note-about-mate) |
 
 
 

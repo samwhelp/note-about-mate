@@ -17,6 +17,7 @@ grand_parent: 如何
 * [其他方式](#其他方式)
 * [範例腳本](#範例腳本)
 * [Mate Panel Layouts](#mate-panel-layouts)
+* [Change Layout / By dconf](#by-dconf)
 
 
 
@@ -74,3 +75,33 @@ stand-alone-top
 ubuntu
 ```
 
+
+
+
+## By dconf
+
+> 主要採用這個方式
+
+> [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/prototype.sh)
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`default`」
+
+``` sh
+dconf reset -f /org/mate/panel/
+
+dconf write /org/mate/panel/general/default-layout "'default'"
+
+mate-panel --replace &
+```
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`brisk-menu-stand-alone-top`」。
+
+``` sh
+dconf reset -f /org/mate/panel/
+
+dconf write /org/mate/panel/general/default-layout "'brisk-menu-stand-alone-top'"
+
+mate-panel --replace &
+```

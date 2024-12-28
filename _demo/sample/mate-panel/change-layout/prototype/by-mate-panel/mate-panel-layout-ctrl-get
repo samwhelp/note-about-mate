@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+
+
+
+sys_mate_panel_layout_get () {
+
+	dconf read /org/mate/panel/general/default-layout
+}
+
+
+mod_mate_panel_layout_ctrl_get () {
+
+	sys_mate_panel_layout_get
+
+}
+
+
+mod_mate_panel_layout_ctrl_get

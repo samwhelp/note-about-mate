@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+
+
+
+sys_mate_panel_layout_list () {
+
+	ls /usr/share/mate-panel/layouts/*.layout | awk -F '/' '{printf $6"\n"}' | awk -F '.layout' '{printf $1"\n"}'
+
+}
+
+
+mod_mate_panel_layout_ctrl_list () {
+
+	sys_mate_panel_layout_list
+
+}
+
+
+mod_mate_panel_layout_ctrl_list

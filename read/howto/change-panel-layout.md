@@ -8,11 +8,11 @@ parent: 如何
 
 # 更改「Mate Panel」的「Layout」
 
-| 更改「Mate Panel」的「Layout」| 更多說明 | 範例腳本 |
+| 更改「Mate Panel」的「Layout」| 個別說明 | 範例腳本 |
 | --------------------------- | ------- | ------- |
-| [By dconf](#by-dconf) | [更多說明](change-panel-layout/by-dconf) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/) |
-| [By mate-panel](#by-mate-panel) | [更多說明](change-panel-layout/by-mate-panel) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/) |
-| [By mate-tweak](#by-mate-tweak) | [更多說明](change-panel-layout/by-mate-tweak) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-tweak/) |
+| [By dconf](#by-dconf) | [個別說明](change-panel-layout/by-dconf) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/) |
+| [By mate-panel](#by-mate-panel) | [個別說明](change-panel-layout/by-mate-panel) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/) |
+| [By mate-tweak](#by-mate-tweak) | [個別說明](change-panel-layout/by-mate-tweak) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-tweak/) |
 
 
 
@@ -65,7 +65,7 @@ ubuntu
 
 ## By dconf
 
-> 主要採用「dconf」這個方式
+> 主要採用「`dconf`」這個方式
 
 > [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/prototype.sh)
 

@@ -16,6 +16,7 @@ has_children: false
 | GitHub / [mate-desktop](https://github.com/mate-desktop) |
 | [Ubuntu MATE](https://ubuntu-mate.org/) |
 | GitHub / [ubuntu-mate](https://github.com/ubuntu-mate) |
+| GitHub / ubuntu-mate / [mate-tweak](https://github.com/ubuntu-mate/mate-tweak)
 
 
 

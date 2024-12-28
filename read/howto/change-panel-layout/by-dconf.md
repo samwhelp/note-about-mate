@@ -80,7 +80,7 @@ ubuntu
 
 ## By dconf
 
-> 主要採用這個方式
+> 主要採用「`dconf`」這個方式
 
 > [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/prototype.sh)
 

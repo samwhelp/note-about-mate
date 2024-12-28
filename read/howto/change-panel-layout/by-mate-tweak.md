@@ -17,6 +17,7 @@ grand_parent: 如何
 * [其他方式](#其他方式)
 * [範例腳本](#範例腳本)
 * [Mate Panel Layouts](#mate-panel-layouts)
+* [Change Layout / By mate-tweak](#by-mate-tweak)
 
 
 
@@ -73,3 +74,93 @@ stand-alone-bottom
 stand-alone-top
 ubuntu
 ```
+
+
+
+
+## By mate-tweak
+
+> [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-tweak/prototype.sh)
+
+執行
+
+``` sh
+mate-tweak --get-layout
+```
+
+顯示
+
+```
+Window Manager is: marco
+System installed layouts:
+['fedora', 'default', 'opensuse']
+Current layout: default
+```
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`default`」。
+
+``` sh
+mate-tweak --layout 'default'
+```
+
+顯示
+
+```
+Window Manager is: marco
+System installed layouts:
+['fedora', 'default', 'opensuse']
+Current layout: default
+Switching to: default
+```
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`brisk-menu-stand-alone-top`」。
+
+``` sh
+mate-tweak --layout 'brisk-menu-stand-alone-top'
+```
+
+顯示
+
+```
+Window Manager is: marco
+System installed layouts:
+['fedora', 'default', 'opensuse']
+Current layout: default
+Switching to: brisk-menu-stand-alone-top
+Found dock hint for brisk-menu-stand-alone-top
+```
+
+
+> 注意事項: 我在「Debian Bookworm」執行「`mate-tweak --layout 'default'`」，發現會出錯，提示訊息如下
+
+```
+Window Manager is: marco
+System installed layouts:
+['fedora', 'default', 'opensuse']
+Current layout: brisk-menu-stand-alone-bottom
+Switching to: default
+Traceback (most recent call last):
+  File "/usr/bin/mate-tweak", line 1737, in <module>
+    mt.replace_panel_layout(args.layout, True)
+  File "/usr/bin/mate-tweak", line 768, in replace_panel_layout
+    self.enable_applets()
+  File "/usr/bin/mate-tweak", line 571, in enable_applets
+    pid = subprocess.Popen(['mate-volume-control-applet'], stdout=DEVNULL, stderr=DEVNULL).pid
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1024, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.11/subprocess.py", line 1901, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'mate-volume-control-applet'
+```
+
+> 於是修改「`/usr/bin/mate-tweak`」這個檔案，
+
+> 找到其中一行「[pid = subprocess.Popen(['mate-volume-control-applet'], stdout=DEVNULL, stderr=DEVNULL).pid](https://github.com/ubuntu-mate/mate-tweak/blob/master/mate-tweak#L571)」
+
+> 將「`mate-volume-control-applet`」改成「`mate-volume-control-status-icon`」，就可以正常運作。
+
+
+

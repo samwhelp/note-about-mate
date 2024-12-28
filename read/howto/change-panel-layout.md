@@ -65,9 +65,12 @@ ubuntu
 
 ## By dconf
 
-> 主要採用這個方式
+> 主要採用「dconf」這個方式
 
 > [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/prototype.sh)
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`default`」。
 
 ``` sh
 dconf reset -f /org/mate/panel/
@@ -82,6 +85,7 @@ mate-panel --replace &
 
 > [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/prototype.sh)
 
+
 > 本來預期採用下面三行的流程，不過不是每次都會成功。
 
 ``` sh
@@ -93,6 +97,9 @@ mate-panel --replace &
 ```
 
 > 於是改為下面三行的流程，就可以正常運行
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`default`」。
 
 ``` sh
 mate-panel --reset
@@ -123,7 +130,7 @@ Current layout: default
 ```
 
 
-執行
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`default`」。
 
 ``` sh
 mate-tweak --layout 'default'
@@ -140,8 +147,7 @@ Switching to: default
 ```
 
 
-
-執行
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`brisk-menu-stand-alone-top`」。
 
 ``` sh
 mate-tweak --layout 'brisk-menu-stand-alone-top'

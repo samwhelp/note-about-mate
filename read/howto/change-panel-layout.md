@@ -1,7 +1,7 @@
 ---
 title: 更改「Mate Panel」的「Layout」
 nav_order: 7030
-has_children: false
+has_children: true
 parent: 如何
 ---
 

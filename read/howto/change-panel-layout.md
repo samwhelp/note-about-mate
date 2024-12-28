@@ -139,6 +139,26 @@ Current layout: default
 Switching to: default
 ```
 
+
+
+執行
+
+``` sh
+mate-tweak --layout 'brisk-menu-stand-alone-top'
+```
+
+顯示
+
+```
+Window Manager is: marco
+System installed layouts:
+['fedora', 'default', 'opensuse']
+Current layout: default
+Switching to: brisk-menu-stand-alone-top
+Found dock hint for brisk-menu-stand-alone-top
+```
+
+
 > 注意事項: 我在「Debian Bookworm」執行「`mate-tweak --layout 'default'`」，發現會出錯，提示訊息如下
 
 ```
@@ -178,3 +198,87 @@ FileNotFoundError: [Errno 2] No such file or directory: 'mate-volume-control-app
 | [dconf-cli](https://packages.debian.org/stable/dconf-cli) |
 | [mate-panel](https://packages.debian.org/stable/mate-panel) |
 | [mate-tweak](https://packages.debian.org/stable/mate-tweak) |
+
+
+
+
+## Manpage
+
+
+
+
+## Help
+
+執行
+
+``` sh
+dconf help
+```
+
+顯示
+
+```
+Usage:
+  dconf COMMAND [ARGS...]
+
+Commands:
+  help              Show this information
+  read              Read the value of a key
+  list              List the contents of a dir
+  write             Change the value of a key
+  reset             Reset the value of a key or dir
+  compile           Compile a binary database from keyfiles
+  update            Update the system databases
+  watch             Watch a path for changes
+  dump              Dump an entire subpath to stdout
+  load              Populate a subpath from stdin
+
+Use 'dconf help COMMAND' to get detailed help.
+
+```
+
+
+執行
+
+``` sh
+mate-panel --help
+```
+
+顯示
+
+```
+Usage:
+  mate-panel [OPTION…]
+
+Help Options:
+  -h, --help                      Show help options
+  --help-all                      Show all help options
+  --help-sm-client                Show session management options
+  --help-gtk                      Show GTK+ Options
+
+Application Options:
+  --replace                       Replace a currently running panel
+  --reset                         Reset the panel configuration to default
+  --run-dialog                    Execute the run dialog
+  --layout                        Set the default panel layout
+  --display=DISPLAY               X display to use
+
+```
+
+
+執行
+
+``` sh
+mate-tweak --help
+```
+
+顯示
+
+```
+usage: mate-tweak [-h] [--layout LAYOUT] [--get-layout]
+
+options:
+  -h, --help       show this help message and exit
+  --layout LAYOUT  Switch to a panel layout
+  --get-layout     Get the current panel layout
+```

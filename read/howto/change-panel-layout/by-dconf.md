@@ -358,7 +358,7 @@ locked=true
 
 ## dconf db Backup and Restore
 
-> 執行下面[指令](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf-load/layout-brisk-menu-stand-alone-top/config-dump.sh)，將「設定」儲存到「[mate-panel-layout.conf](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf-load/layout-brisk-menu-stand-alone-top/mate-panel-layout.conf)」這個檔案。
+> 執行下面[指令](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf-load/layout-brisk-menu-stand-alone-top/config-dump.sh)，將「dconf db」關於「Mate Panel 的設定」儲存到「[mate-panel-layout.conf](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf-load/layout-brisk-menu-stand-alone-top/mate-panel-layout.conf)」這個檔案。
 
 ``` sh
 dconf dump /org/mate/panel/ > mate-panel-layout.conf

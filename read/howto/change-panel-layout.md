@@ -8,11 +8,11 @@ parent: 如何
 
 # 更改「Mate Panel」的「Layout」
 
-| 更改「Mate Panel」的「Layout」| 更多說明 |
-| --------------------------- | ------- |
-| [By dconf](#by-dconf) | [更多說明](change-panel-layout/by-dconf) |
-| [By mate-panel](#by-mate-panel) | [更多說明](change-panel-layout/by-mate-panel) |
-| [By mate-tweak](#by-mate-tweak) | [更多說明](change-panel-layout/by-mate-tweak) |
+| 更改「Mate Panel」的「Layout」| 更多說明 | 範例腳本 |
+| --------------------------- | ------- | ------- |
+| [By dconf](#by-dconf) | [更多說明](change-panel-layout/by-dconf) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/) |
+| [By mate-panel](#by-mate-panel) | [更多說明](change-panel-layout/by-mate-panel) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/) |
+| [By mate-tweak](#by-mate-tweak) | [更多說明](change-panel-layout/by-mate-tweak) | [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-tweak/) |
 
 
 
@@ -67,7 +67,7 @@ ubuntu
 
 > 主要採用這個方式
 
-> [範例](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/prototype.sh)
+> [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-dconf/prototype.sh)
 
 ``` sh
 dconf reset -f /org/mate/panel/
@@ -80,7 +80,7 @@ mate-panel --replace &
 
 ## By mate-panel
 
-> [範例](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/prototype.sh)
+> [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/prototype.sh)
 
 > 本來預期採用下面三行的流程，不過不是每次都會成功。
 
@@ -105,7 +105,7 @@ mate-panel --replace &
 
 ## By mate-tweak
 
-> [範例](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-tweak/prototype.sh)
+> [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-tweak/prototype.sh)
 
 執行
 

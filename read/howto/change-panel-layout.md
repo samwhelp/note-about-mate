@@ -200,6 +200,14 @@ FileNotFoundError: [Errno 2] No such file or directory: 'mate-volume-control-app
 | [mate-tweak](https://packages.debian.org/stable/mate-tweak) |
 
 
+| Debian Package |
+| -------------- |
+| [mate-applets](https://packages.debian.org/stable/mate-applets) |
+| [mate-applet-brisk-menu](https://packages.debian.org/stable/mate-applet-brisk-menu) |
+| [mate-applet-appmenu](https://packages.debian.org/stable/mate-applet-appmenu) |
+| [mate-dock-applet](https://packages.debian.org/stable/mate-dock-applet) |
+
+
 
 
 ## Manpage

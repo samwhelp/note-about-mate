@@ -24,8 +24,8 @@ mate-panel --reset
 ## ## set new layout
 ##
 
-#dconf write /org/mate/panel/general/default-layout "'default'"
-mate-panel --layout 'default'
+dconf write /org/mate/panel/general/default-layout "'default'"
+#mate-panel --layout 'default'
 
 dconf read /org/mate/panel/general/default-layout
 

@@ -204,6 +204,10 @@ FileNotFoundError: [Errno 2] No such file or directory: 'mate-volume-control-app
 
 ## Manpage
 
+* [man dconf](https://manpages.debian.org/stable/dconf-cli/dconf.1.en.html)
+* [man mate-panel](https://manpages.debian.org/stable/mate-panel/mate-panel.1.en.html)
+* [man mate-tweak](https://manpages.debian.org/stable/mate-tweak/mate-tweak.1.en.html)
+
 
 
 

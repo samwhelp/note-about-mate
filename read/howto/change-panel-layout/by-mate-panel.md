@@ -18,6 +18,9 @@ grand_parent: 如何
 * [範例腳本](#範例腳本)
 * [Mate Panel Layouts](#mate-panel-layouts)
 * [Change Layout / By mate-panel](#by-mate-panel)
+* [Debian Package](#debian-package)
+* [Manpage](#manpage)
+* [Help](#help)
 
 
 
@@ -115,4 +118,111 @@ mate-panel --reset
 dconf write /org/mate/panel/general/default-layout "'brisk-menu-stand-alone-top'"
 
 mate-panel --replace &
+```
+
+
+
+
+## Debian Package
+
+| Debian Package |
+| -------------- |
+| [dconf-cli](https://packages.debian.org/stable/dconf-cli) |
+| [mate-panel](https://packages.debian.org/stable/mate-panel) |
+| [mate-tweak](https://packages.debian.org/stable/mate-tweak) |
+
+
+| Debian Package |
+| -------------- |
+| [mate-applets](https://packages.debian.org/stable/mate-applets) |
+| [mate-applet-brisk-menu](https://packages.debian.org/stable/mate-applet-brisk-menu) |
+| [mate-applet-appmenu](https://packages.debian.org/stable/mate-applet-appmenu) |
+| [mate-dock-applet](https://packages.debian.org/stable/mate-dock-applet) |
+
+
+
+
+## Manpage
+
+* [man dconf](https://manpages.debian.org/stable/dconf-cli/dconf.1.en.html)
+* [man mate-panel](https://manpages.debian.org/stable/mate-panel/mate-panel.1.en.html)
+* [man mate-tweak](https://manpages.debian.org/stable/mate-tweak/mate-tweak.1.en.html)
+
+
+
+
+## Help
+
+執行
+
+``` sh
+dconf help
+```
+
+顯示
+
+```
+Usage:
+  dconf COMMAND [ARGS...]
+
+Commands:
+  help              Show this information
+  read              Read the value of a key
+  list              List the contents of a dir
+  write             Change the value of a key
+  reset             Reset the value of a key or dir
+  compile           Compile a binary database from keyfiles
+  update            Update the system databases
+  watch             Watch a path for changes
+  dump              Dump an entire subpath to stdout
+  load              Populate a subpath from stdin
+
+Use 'dconf help COMMAND' to get detailed help.
+
+```
+
+
+執行
+
+``` sh
+mate-panel --help
+```
+
+顯示
+
+```
+Usage:
+  mate-panel [OPTION…]
+
+Help Options:
+  -h, --help                      Show help options
+  --help-all                      Show all help options
+  --help-sm-client                Show session management options
+  --help-gtk                      Show GTK+ Options
+
+Application Options:
+  --replace                       Replace a currently running panel
+  --reset                         Reset the panel configuration to default
+  --run-dialog                    Execute the run dialog
+  --layout                        Set the default panel layout
+  --display=DISPLAY               X display to use
+
+```
+
+
+執行
+
+``` sh
+mate-tweak --help
+```
+
+顯示
+
+```
+usage: mate-tweak [-h] [--layout LAYOUT] [--get-layout]
+
+options:
+  -h, --help       show this help message and exit
+  --layout LAYOUT  Switch to a panel layout
+  --get-layout     Get the current panel layout
 ```

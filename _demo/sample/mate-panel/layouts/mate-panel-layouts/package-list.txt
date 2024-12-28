@@ -1,0 +1,21 @@
+
+
+##
+## # mate
+##
+
+
+
+
+##
+## ## Package / mate
+##
+
+mate-panel
+
+
+mate-applets
+mate-applet-brisk-menu
+mate-applet-appmenu
+
+mate-dock-applet

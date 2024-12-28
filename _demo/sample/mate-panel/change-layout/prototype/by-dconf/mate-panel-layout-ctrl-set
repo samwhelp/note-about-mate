@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+
+
+
+sys_mate_panel_layout_reset () {
+
+	dconf reset -f /org/mate/panel/
+
+}
+
+
+sys_mate_panel_layout_set () {
+
+	local layout_name="${1}"
+
+	dconf write /org/mate/panel/general/default-layout "'${layout_name}'"
+
+}
+
+
+sys_mate_panel_layout_get () {
+
+	dconf read /org/mate/panel/general/default-layout
+}
+
+
+sys_mate_panel_restart () {
+
+	mate-panel --replace &
+
+}
+
+
+mod_mate_panel_layout_ctrl_set () {
+
+	local layout_name="${1}"
+
+	sys_mate_panel_layout_reset
+
+	sys_mate_panel_layout_set "${layout_name}"
+
+	sys_mate_panel_restart
+
+}
+
+
+mod_mate_panel_layout_ctrl_set "${@}"

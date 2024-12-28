@@ -14,6 +14,7 @@ has_children: true
 | ------- |
 | [設定 Mouse Button Modifier](https://samwhelp.github.io/note-about-mate/read/howto/config-mouse-button-modifier.html) |
 | [停用按鍵綁定「Super_L」開啟「Menu」](https://samwhelp.github.io/note-about-mate/read/howto/disable-keybind-open-menu.html) |
+| [更改「Mate Panel」的「Layout」](https://samwhelp.github.io/note-about-mate/read/howto/change-panel-layout.html) |
 
 
 

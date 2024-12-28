@@ -17,6 +17,7 @@ grand_parent: 如何
 * [其他方式](#其他方式)
 * [範例腳本](#範例腳本)
 * [Mate Panel Layouts](#mate-panel-layouts)
+* [Change Layout / By mate-panel](#by-mate-panel)
 
 
 
@@ -72,4 +73,46 @@ opensuse
 stand-alone-bottom
 stand-alone-top
 ubuntu
+```
+
+
+
+
+## By mate-panel
+
+> [範例腳本](https://github.com/samwhelp/note-about-mate/blob/gh-pages/_demo/sample/mate-panel/change-layout/prototype/by-mate-panel/prototype.sh)
+
+
+> 本來預期採用下面三行的流程，不過不是每次都會成功。
+
+``` sh
+mate-panel --reset
+
+mate-panel --layout 'default'
+
+mate-panel --replace &
+```
+
+> 於是改為下面三行的流程，就可以正常運行
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`default`」。
+
+``` sh
+mate-panel --reset
+
+dconf write /org/mate/panel/general/default-layout "'default'"
+
+mate-panel --replace &
+```
+
+
+> 舉例：執行下面指令，將「Mate Panel Layout」改成「`brisk-menu-stand-alone-top`」。
+
+``` sh
+mate-panel --reset
+
+dconf write /org/mate/panel/general/default-layout "'brisk-menu-stand-alone-top'"
+
+mate-panel --replace &
 ```

@@ -8,3 +8,20 @@ grand_parent: 如何
 
 
 # 更改「Mate Panel」的「Layout」/ By mate-panel
+
+
+
+
+## 主題
+
+* [其他方式](#其他方式)
+
+
+
+
+## 其他方式
+
+| 其他方式 |
+| ------- |
+| [By dconf](by-dconf) |
+| [By mate-tweak](by-mate-tweak) |

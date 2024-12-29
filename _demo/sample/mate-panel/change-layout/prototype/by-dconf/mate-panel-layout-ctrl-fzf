@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+
+
+
+
+menu_content () {
+
+	sys_mate_panel_layout_list
+
+}
+
+
+menu_factory () {
+
+	fzf
+
+}
+
+
+menu_start () {
+
+	menu_content | menu_factory
+
+}
+
+
+
+
+sys_mate_panel_layout_reset () {
+
+	dconf reset -f /org/mate/panel/
+
+}
+
+
+sys_mate_panel_layout_list () {
+
+	ls /usr/share/mate-panel/layouts/*.layout | awk -F '/' '{printf $6"\n"}' | awk -F '.layout' '{printf $1"\n"}'
+
+}
+
+
+sys_mate_panel_layout_set () {
+
+	local layout_name="${1}"
+
+	dconf write /org/mate/panel/general/default-layout "'${layout_name}'"
+
+}
+
+
+sys_mate_panel_layout_get () {
+
+	dconf read /org/mate/panel/general/default-layout
+}
+
+
+sys_mate_panel_restart () {
+
+	mate-panel --replace &
+
+}
+
+
+mod_mate_panel_layout_ctrl_set () {
+
+	local layout_name="${1}"
+
+	sys_mate_panel_layout_reset
+
+	sys_mate_panel_layout_set "${layout_name}"
+
+	sys_mate_panel_restart
+
+}
+
+
+mod_mate_panel_layout_ctrl_fzf () {
+
+	local selected="$(menu_start)"
+
+
+	if [ -z "${selected}" ]; then
+
+		echo
+		echo "##"
+		echo "## ## Not selected ##"
+		echo "##"
+		echo
+
+		return 0
+
+	fi
+
+	echo
+	echo "##"
+	echo "## ## Selected: ${selected}"
+	echo "##"
+	echo
+
+	mod_mate_panel_layout_ctrl_set "${selected}"
+
+}
+
+
+mod_mate_panel_layout_ctrl_fzf

@@ -51,7 +51,7 @@ gsettings get com.solus-project.brisk-menu hot-key
 
 | 相關議題 |
 | ------- |
-| [設定 Mouse Button Modifier](https://samwhelp.github.io/note-about-mate/read/howto/config-mouse-button-modifier.html) |
+| [設定「Mouse Button Modifier」](https://samwhelp.github.io/note-about-mate/read/howto/config-mouse-button-modifier.html) |
 
 
 ## gschema

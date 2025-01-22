@@ -1,12 +1,12 @@
 ---
-title: 設定 Mouse Button Modifier
+title: 設定「Mouse Button Modifier」
 nav_order: 7021
 has_children: false
 parent: 如何
 ---
 
 
-# 設定 Mouse Button Modifier
+# 設定「Mouse Button Modifier」
 
 
 ## 相關設定指令

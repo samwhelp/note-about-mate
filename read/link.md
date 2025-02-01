@@ -8,6 +8,8 @@ has_children: false
 # 連結
 
 
+
+
 ## MATE Desktop
 
 | Link |
@@ -17,6 +19,26 @@ has_children: false
 | [Ubuntu MATE](https://ubuntu-mate.org/) |
 | GitHub / [ubuntu-mate](https://github.com/ubuntu-mate) |
 | GitHub / ubuntu-mate / [mate-tweak](https://github.com/ubuntu-mate/mate-tweak)
+
+
+
+
+## Brisk Menu
+
+| Link |
+| ---- |
+| GitHub / getsolus / [brisk-menu](https://github.com/getsolus/brisk-menu) |
+| GitHub / getsolus / [brisk-menu-translations](https://github.com/getsolus/brisk-menu-translations) |
+| GitHub / solus-project / [brisk-menu](https://github.com/solus-project/brisk-menu) |
+
+
+
+
+## Mint Menu
+
+| Link |
+| ---- |
+| GitHub / linuxmint / [mintmenu](https://github.com/linuxmint/mintmenu) |
 
 
 

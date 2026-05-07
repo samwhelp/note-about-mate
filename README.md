@@ -73,15 +73,13 @@
 
 | Link | GitHub |
 | ---- | ------ |
-| [System Modeling](https://samwhelp.github.io/system-modeling/) | [GitHub](https://github.com/samwhelp/system-modeling) |
 | [Compiz 探索筆記](https://samwhelp.github.io/note-about-compiz/) | [GitHub](https://github.com/samwhelp/note-about-compiz) |
-| [Debian Mate 探索筆記](https://samwhelp.github.io/note-about-debian-mate/) | [GitHub](https://github.com/samwhelp/note-about-debian-mate) |
+| [LinuxMint Mate 探索筆記](https://samwhelp.github.io/note-about-linuxmint-mate/) | [GitHub](https://github.com/samwhelp/note-about-linuxmint-mate) |
 | [Ubuntu Mate 探索筆記](https://samwhelp.github.io/note-about-ubuntu-mate/) | [GitHub](https://github.com/samwhelp/note-about-ubuntu-mate) |
-| [Linux Mint Mate 探索筆記](https://samwhelp.github.io/note-about-linuxmint-mate/) | [GitHub](https://github.com/samwhelp/note-about-linuxmint-mate) |
+| [Debian Mate 探索筆記](https://samwhelp.github.io/note-about-debian-mate/) | [GitHub](https://github.com/samwhelp/note-about-debian-mate) |
 | [Fedora Mate 探索筆記](https://samwhelp.github.io/note-about-fedora-mate/) | [GitHub](https://github.com/samwhelp/note-about-fedora-mate) |
-| [Debian 探索筆記](https://samwhelp.github.io/note-about-debian/) | [GitHub](https://github.com/samwhelp/note-about-debian) |
-| [Ubuntu 探索筆記](https://samwhelp.github.io/note-about-ubuntu/) | [GitHub](https://github.com/samwhelp/note-about-ubuntu) |
-| [Fedora 探索筆記](https://samwhelp.github.io/note-about-fedora/) | [GitHub](https://github.com/samwhelp/note-about-fedora) |
+| [Archlinux Mate 探索筆記](https://samwhelp.github.io/note-about-archlinux-mate/) | [GitHub](https://github.com/samwhelp/note-about-archlinux-mate) |
+| [Voidlinux Mate 探索筆記](https://samwhelp.github.io/note-about-voidlinux-mate/) | [GitHub](https://github.com/samwhelp/note-about-voidlinux-mate) |
 
 
 
